@@ -1,0 +1,296 @@
+* {
+    box-sizing:  border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+header{
+    background-color: #EAC926;
+    height: auto;
+}
+footer{
+    background-color: white;
+    margin:5px;
+    padding: 24px 14px;
+    height: auto;
+    color: #666;
+}
+img {
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2 {
+    font-size: 24px;
+}
+ul{
+    padding-left: 5px;
+}
+.topHeader{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 1.5rem 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.logoImage, .searchBar{
+    width: 50%;
+}
+.searchBar input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+}
+.logoSearchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.login{
+    text-align: center;
+    width: auto;
+    height: 3rem;
+    padding-top: 10px;
+}
+.bottomHeader{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.navBar{
+    width: 50%;
+    height: auto;
+    padding: 10px;
+}
+.shopLinks li , .accountLinks li{
+    width: 25%;
+}
+.burgerMenu{
+    width: auto;
+    height: 68px;
+    text-align: center;
+    padding: 16px 0px;
+}
+.burgerIcon{
+    background-color: #0044AA;
+    width: 40px;
+    height: 35px;
+    font-size: 2em;
+    color: white;
+    position: relative;
+    margin: auto;
+    padding-top: 3px;
+    border-radius: 5px;
+
+}
+.adBanner img{
+    width: 100%;
+}
+.sectionTitle{
+    color: #666;
+    width: 90%;
+    margin: 1rem auto;
+}
+.product{
+    width: 90%;
+    background-color: white;
+    margin: 10px auto;
+    transition: box-shadow 0.3s;
+}
+.product:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+.productImage{
+    padding: 1.5rem 1rem;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.truckIcon{
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+.productInfo{
+    border-top: 1px solid #ebebeb;
+    height: auto;
+    padding: 15px;
+    position: relative;
+}
+.precio {
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54aa1;
+}
+.descripcion{
+    font-size: 16px;
+    color: #666;
+    padding-top: 15px;
+    display: none;
+}
+.icon{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #145AC3;
+}
+.info1, .info2, .info3{
+    text-align: center;
+    padding: 2.7rem;
+}
+.loginForm, .newUserForm{
+    width: 90%;
+    height:auto;
+    margin: auto;
+}
+.loginForm input, .loginForm button, .newUserForm button, .newUserForm input.inputText{
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 0rem 1rem;
+}
+.loginForm button, .newUserForm button{
+    background-color: #0044AA;
+    color: white;
+    font-weight: bold;
+}
+.loginForm form div{
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 0px;
+    text-align: center;
+}
+.newUserForm form div {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0px;
+    text-align: center;
+}
+.newUserForm div.userTypeSelectors{
+    display: flex;
+    flex-direction: row;
+}
+.newUserForm div.interesesSelectors{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%;
+    margin: auto;
+}
+.loginForm button:hover, .newUserForm button:hover {
+    background-color: #0022aa;
+}
+@media (min-width:361px) {
+    .bottomHeader{
+        display: block;
+    }
+    .descripcion{
+        display: block;
+    }
+    .topHeader{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logoSearchbar{
+        width: 50%;
+    }
+    .searchBar input{
+        height: 20px;
+    }
+    .bottomHeader{
+        display: flex;
+        flex-direction: row;
+    }
+    .accountLinks{
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .shopLinks{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .product{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .burgerMenu{
+        display: none;
+    }
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .products article{
+        width: 45%;
+    }
+    .extraInfo{
+        display: flex;
+        flex-direction: row;
+    }
+    .extraInfo div.icon i:hover{
+        color: #EAC926;
+    }
+    .loginForm input, .loginForm button, .newUserForm input.inputText, .newUserForm button{
+        width: 70%;
+        border-radius: 5px;
+        padding: 0rem 2rem;
+    }
+    .loginForm form div{
+        height: 6rem;
+        padding: 2rem 0px;
+    }
+    .newUserForm form div {
+        padding: 2rem 0px;
+    }
+    .newUserForm div.userTypeSelectors{
+        flex-direction: column;
+    }
+    .newUserForm div.interesesSelectors{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+    }
+}
+@media (min-width:768px) {
+    .products article{
+        width: 20%;
+    }
+    .loginForm input, .loginForm button, .newUserForm input.inputText, .newUserForm button{
+        width: 60%;
+    }
+    .loginForm form div{
+        height: 8rem;
+        padding: 3rem 0px;
+    }
+    .newUserForm div.interesesSelectors{
+        width: 50%;
+    }
+}
